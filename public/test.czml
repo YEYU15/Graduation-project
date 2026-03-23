@@ -1,0 +1,29 @@
+[
+  {
+    "id": "document",
+    "name": "Satellite Orbit",
+    "version": "1.0"
+  },
+  {
+    "id": "sat-1",
+    "name": "Experimental Satellite",
+    "availability": "2026-03-21T00:00:00Z/2026-03-22T00:00:00Z",
+    "path": {
+      "show": true,
+      "width": 1,
+      "material": { "solidColor": { "color": { "rgba": [0, 255, 255, 255] } } }
+    },
+    "position": {
+      "epoch": "2026-03-21T00:00:00Z",
+      "cartesian": [
+        0, 7000000, 0, 0,
+        3600, 0, 7000000, 0,
+        7200, -7000000, 0, 0
+      ]
+    },
+    "point": {
+      "pixelSize": 10,
+      "color": { "rgba": [255, 255, 0, 255] }
+    }
+  }
+]
