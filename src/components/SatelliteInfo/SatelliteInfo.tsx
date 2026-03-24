@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as Cesium from 'cesium';
 import satelliteGltfUrl from '../../assets/Satellite.gltf?url';
+import SatellitePanel from './SatellitePanel';
 
 // ==========================================
 // 报告第 4 节：快照与恢复机制
@@ -55,7 +56,7 @@ const SatelliteInfo: React.FC = () => {
     // useState 变了页面会跟着变；useRef 变了页面不会变
     // 要么装着下面的对象，要么 null
     // 初始值 null
-    const lastModeledRef = useRef<{ entity: any; snapshot: any; overlayEntity: any } | null>(null);
+    const lastModeledRef = useRef<{ entity: any; snapshot: any; overlayEntity: any; extraEntities?: any[] } | null>(null);
     // setTarget(entity)时：React 接收到通知，重新渲染组件
     const [target, setTarget] = useState<any>(null);
 
@@ -193,8 +194,83 @@ const SatelliteInfo: React.FC = () => {
                 }
             });
 
-            // 记录到 Ref 中，方便下次点击时恢复
-            lastModeledRef.current = { entity, snapshot, overlayEntity };
+            // ==========================================
+            // 报告第 9 节：额外的姿态可视化
+            // ==========================================
+            // 9.1 星下线（青色）
+            const nadirLineEntity = viewer.entities.add({
+                id: `sat-nadir-line-${String(entity.id)}-${Date.now()}`,
+                polyline: {
+                    positions: new Cesium.CallbackProperty(function (time: any) {
+                        const pos = positionProp?.getValue(time);
+                        if (!pos) return [];
+                        const carto = Cesium.Cartographic.fromCartesian(pos);
+                        return [pos, Cesium.Cartesian3.fromRadians(carto.longitude, carto.latitude, 0)];
+                    }, false),
+                    width: 3,
+                    material: Cesium.Color.CYAN.withAlpha(0.7),
+                    arcType: Cesium.ArcType.NONE,
+                }
+            });
+
+            // 9.2 & 9.3 模型头部朝向线（红色） + 夹角标签
+            const forwardLineEntity = viewer.entities.add({
+                id: `sat-forward-line-${String(entity.id)}-${Date.now()}`,
+                position: positionProp,
+                polyline: {
+                    positions: new Cesium.CallbackProperty(function (time: any) {
+                        const pos = positionProp?.getValue(time);
+                        const ori = dynamicOrientationProp?.getValue(time);
+                        if (!pos || !ori) return [];
+
+                        // 9.2 核心算法
+                        const forward = Cesium.Cartesian3.normalize(
+                            Cesium.Matrix3.getColumn(Cesium.Matrix3.fromQuaternion(ori), 0, new Cesium.Cartesian3()),
+                            new Cesium.Cartesian3()
+                        );
+
+                        // 1. 显式构造并保存射线对象
+                        const ray = new Cesium.Ray(pos, forward);
+                        // 获取相交区间 {start, stop} 或 undefined
+                        const intersectionInterval = Cesium.IntersectionTests.rayEllipsoid(ray, Cesium.Ellipsoid.WGS84);
+
+                        let endPoint;
+                        if (intersectionInterval) {
+                            // 2. 必须使用 getPoint 将 {start, stop} 的区间长度转换成空间中的三维坐标点
+                            endPoint = Cesium.Ray.getPoint(ray, intersectionInterval.start, new Cesium.Cartesian3());
+                        } else {
+                            // 有交点连交点，没交点画一条超长线指向太空
+                            const scaledForward = Cesium.Cartesian3.multiplyByScalar(forward, 2000000, new Cesium.Cartesian3());
+                            endPoint = Cesium.Cartesian3.add(pos, scaledForward, new Cesium.Cartesian3());
+                        }
+
+                        // 现在的数组是严格的 [Cartesian3, Cartesian3]，Cesium 可以安全渲染
+                        return [pos, endPoint];
+                    }, false),
+                    width: 3,
+                    material: Cesium.Color.RED.withAlpha(0.7),
+                    arcType: Cesium.ArcType.NONE,
+                },
+                label: {
+                    text: new Cesium.CallbackProperty(function (time: any) {
+                        const pos = positionProp?.getValue(time);
+                        const ori = dynamicOrientationProp?.getValue(time);
+                        if (!pos || !ori) return '';
+
+                        // 9.3 核心算法
+                        const nadir = Cesium.Cartesian3.normalize(Cesium.Cartesian3.subtract(Cesium.Cartesian3.ZERO, pos, new Cesium.Cartesian3()), new Cesium.Cartesian3());
+                        const forward = Cesium.Cartesian3.normalize(Cesium.Matrix3.getColumn(Cesium.Matrix3.fromQuaternion(ori), 0, new Cesium.Cartesian3()), new Cesium.Cartesian3());
+                        const angleDegrees = Cesium.Math.toDegrees(Math.acos(Cesium.Math.clamp(Cesium.Cartesian3.dot(nadir, forward), -1.0, 1.0)));
+
+                        return `夹角: ${angleDegrees.toFixed(1)}°`;
+                    }, false),
+                    font: '14px sans-serif',
+                    pixelOffset: new Cesium.Cartesian2(0, -40),
+                }
+            });
+
+            // 👇 最后，更新这行记录 Ref 的代码，把两条线存进去
+            lastModeledRef.current = { entity, snapshot, overlayEntity, extraEntities: [nadirLineEntity, forwardLineEntity] };
         };
 
         // ==========================================
@@ -215,6 +291,7 @@ const SatelliteInfo: React.FC = () => {
                     restoreEntityVisuals(lastModeledRef.current.entity, lastModeledRef.current.snapshot);
                     // 从场景中彻底移除那个高精度 3D 模型
                     viewer.entities.remove(lastModeledRef.current.overlayEntity);
+                    lastModeledRef.current.extraEntities?.forEach((ent: any) => viewer.entities.remove(ent));
                     lastModeledRef.current = null;
                     // 清空相关的数据引用和 React 状态
                     setTarget(null);
@@ -259,6 +336,7 @@ const SatelliteInfo: React.FC = () => {
                 if (lastModeledRef.current) {
                     restoreEntityVisuals(lastModeledRef.current.entity, lastModeledRef.current.snapshot);
                     viewer.entities.remove(lastModeledRef.current.overlayEntity);
+                    lastModeledRef.current.extraEntities?.forEach((ent: any) => viewer.entities.remove(ent));
                 }
 
                 setTarget(t);
@@ -273,11 +351,18 @@ const SatelliteInfo: React.FC = () => {
             if (lastModeledRef.current) {
                 restoreEntityVisuals(lastModeledRef.current.entity, lastModeledRef.current.snapshot);
                 viewer.entities.remove(lastModeledRef.current.overlayEntity);
+                lastModeledRef.current.extraEntities?.forEach((ent: any) => viewer.entities.remove(ent));
             }
         };
     }, []);
 
-    return null;
+    // 最底部的 return 现在极其干净
+    return (
+        <SatellitePanel
+            target={target}
+            lastModeledRef={lastModeledRef} // 把 ref 传给儿子，让它自己去拿数据
+        />
+    );
 };
 
 export default SatelliteInfo;
