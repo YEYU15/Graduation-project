@@ -10,20 +10,31 @@
     "availability": "2026-03-21T00:00:00Z/2026-03-22T00:00:00Z",
     "path": {
       "show": true,
-      "width": 1,
-      "material": { "solidColor": { "color": { "rgba": [0, 255, 255, 255] } } }
+      "width": 2,
+      "material": { 
+        "solidColor": { "color": { "rgba": [0, 255, 255, 255] } } 
+      },
+      "resolution": 120
     },
     "position": {
       "epoch": "2026-03-21T00:00:00Z",
+      "interpolationAlgorithm": "LAGRANGE",
+      "interpolationDegree": 5,
       "cartesian": [
         0, 7000000, 0, 0,
-        3600, 0, 7000000, 0,
-        7200, -7000000, 0, 0
+        1000, 3500000, 6062177, 0,
+        2000, -3500000, 6062177, 0,
+        3000, -7000000, 0, 0,
+        4000, -3500000, -6062177, 0,
+        5000, 3500000, -6062177, 0,
+        6000, 7000000, 0, 0
       ]
     },
     "point": {
       "pixelSize": 10,
-      "color": { "rgba": [255, 255, 0, 255] }
+      "color": { "rgba": [255, 255, 0, 255] },
+      "outlineColor": { "rgba": [0, 0, 0, 255] },
+      "outlineWidth": 2
     }
   }
 ]

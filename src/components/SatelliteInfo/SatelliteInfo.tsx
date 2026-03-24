@@ -84,15 +84,105 @@ const SatelliteInfo: React.FC = () => {
             // 2. 隐藏原始的点图标/标签 (利用 entity.show 整体隐藏，最安全)
             entity.show = false;
 
-            // 占位：目前用实体的默认位置和朝向（后续第7节将替换为动态四元数）
+            // 获取位置属性
             const positionProp = entity.position;
-            const orientationProp = entity.orientation;
+
+            // ==========================================
+            // 新增：第7节 动态姿态计算
+            // ==========================================
+            let dynamicOrientationProp = entity.orientation; // 默认拿原始姿态兜底
+
+            try {
+                if (Cesium && positionProp) {
+                    // Cesium 的渲染引擎每一帧都会调用这个回调函数
+                    dynamicOrientationProp = new Cesium.CallbackProperty(function (time: any, result: any) {
+                        try {
+                            // 从位置属性中提取卫星在空间中的笛卡尔坐标 
+                            const position = positionProp.getValue(time);
+                            if (!position) return result;
+
+                            // 1. 星下线方向
+                            // 地球的球心
+                            const earthCenter = Cesium.Cartesian3.ZERO;
+                            // 用“地心坐标”减去“卫星当前坐标”
+                            const nadirAxis = Cesium.Cartesian3.subtract(earthCenter, position, new Cesium.Cartesian3());
+                            Cesium.Cartesian3.normalize(nadirAxis, nadirAxis);
+
+                            // 2. 速度方向 (t + 0.1s)
+                            // 检查 entity 及其 position 属性是否存在，如果获取不到位置信息，它会给一个默认的方向向量 (0, 1, 0)
+                            const velocity = entity?.position?.getValue ?
+                                Cesium.Cartesian3.subtract(
+                                    // 未来0.1s的位置-当前position
+                                    entity.position.getValue(Cesium.JulianDate.addSeconds(time, 0.1, new Cesium.JulianDate())),
+                                    position,
+                                    new Cesium.Cartesian3()
+                                ) : new Cesium.Cartesian3(0, 1, 0);
+                            // 获取一个表示卫星运动方向的单位向量
+                            Cesium.Cartesian3.normalize(velocity, velocity);
+
+                            // 3. 右向量
+                            // 星下线方向 × 速度方向
+                            let right = Cesium.Cartesian3.cross(nadirAxis, velocity, new Cesium.Cartesian3());
+                            Cesium.Cartesian3.normalize(right, right);
+
+                            // 处理极点奇异性
+                            if (Cesium.Cartesian3.magnitude(right) < 0.01) {
+                                // 地心指向卫星，好像仍然平行，无法计算
+                                const up = Cesium.Cartesian3.normalize(position, new Cesium.Cartesian3());
+                                right = Cesium.Cartesian3.cross(nadirAxis, up, new Cesium.Cartesian3());
+                                Cesium.Cartesian3.normalize(right, right);
+                            }
+
+                            // 4. 绕星下线自旋
+                            const julianTime = Cesium.JulianDate.toDate(time).getTime();
+                            const spinAngle = (julianTime / 3000) % (2 * Math.PI);
+                            const spinQuat = Cesium.Quaternion.fromAxisAngle(nadirAxis, spinAngle, new Cesium.Quaternion());
+                            const rotatedRight = Cesium.Matrix3.multiplyByVector(
+                                Cesium.Matrix3.fromQuaternion(spinQuat),
+                                right,
+                                new Cesium.Cartesian3()
+                            );
+
+                            // 5. 加入 15° 倾角
+                            const tiltAngle = Cesium.Math.toRadians(15);
+                            const forward = new Cesium.Cartesian3(
+                                nadirAxis.x * Math.cos(tiltAngle) + rotatedRight.x * Math.sin(tiltAngle),
+                                nadirAxis.y * Math.cos(tiltAngle) + rotatedRight.y * Math.sin(tiltAngle),
+                                nadirAxis.z * Math.cos(tiltAngle) + rotatedRight.z * Math.sin(tiltAngle)
+                            );
+                            Cesium.Cartesian3.normalize(forward, forward);
+
+                            // 6. 确保正交并合成四元数
+                            // 星下线（nadirAxis）和刚才倾斜了 15° 的前向轴（forward）做叉乘，得到最终右轴
+                            const finalRight = Cesium.Cartesian3.cross(nadirAxis, forward, new Cesium.Cartesian3());
+                            Cesium.Cartesian3.normalize(finalRight, finalRight);
+                            // 得到上轴
+                            const up = Cesium.Cartesian3.cross(forward, finalRight, new Cesium.Cartesian3());
+                            Cesium.Cartesian3.normalize(up, up);
+
+                            const matrix = new Cesium.Matrix3(
+                                forward.x, finalRight.x, up.x,
+                                forward.y, finalRight.y, up.y,
+                                forward.z, finalRight.z, up.z
+                            );
+
+                            return Cesium.Quaternion.fromRotationMatrix(matrix, new Cesium.Quaternion());
+                        } catch (e) {
+                            return result;
+                        }
+                    }, false);
+                }
+            } catch (e) {
+                console.error('[SatelliteInfo] 动态姿态计算失败，回退至原始姿态:', e);
+            }
+            // ==========================================
 
             // 3. 创建 Overlay Entity (报告第 6 节)
             const overlayEntity = viewer.entities.add({
                 id: `sat-model-overlay-${String(entity.id)}-${Date.now()}`,
                 position: positionProp ?? entity.position,
-                orientation: orientationProp ?? entity.orientation,
+                // 👇 这里使用我们刚刚计算出来的 dynamicOrientationProp
+                orientation: dynamicOrientationProp,
                 model: {
                     uri: satelliteModelUri,
                     scale: 5.0,
