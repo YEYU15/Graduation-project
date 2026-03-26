@@ -199,16 +199,31 @@ const SatelliteInfo: React.FC = () => {
             // ==========================================
             // 9.1 星下线（青色）
             const nadirLineEntity = viewer.entities.add({
+                // 为实体生成一个唯一的 ID：前缀 + 卫星实体ID + 当前时间戳
                 id: `sat-nadir-line-${String(entity.id)}-${Date.now()}`,
                 polyline: {
+                    // 使用 CallbackProperty 实现动态更新，让线条随卫星移动而实时重绘
                     positions: new Cesium.CallbackProperty(function (time: any) {
+                        // 1. 获取卫星在当前时间点（time）的笛卡尔坐标 (X, Y, Z)
                         const pos = positionProp?.getValue(time);
                         if (!pos) return [];
+                        // 2. 先将笛卡尔空间直角坐标 (X, Y, Z) 转换为地理弧度坐标 (Long, Lat, Height)
                         const carto = Cesium.Cartographic.fromCartesian(pos);
-                        return [pos, Cesium.Cartesian3.fromRadians(carto.longitude, carto.latitude, 0)];
+                        // 3. 【构造线段端点】
+                        // 端点 1: 卫星在太空中的实际位置 (pos)
+                        // 端点 2: 保持相同的经纬度，但将高度设为 0（即地表垂直投影点）
+                        const groundPoint = Cesium.Cartesian3.fromRadians(
+                            carto.longitude,
+                            carto.latitude,
+                            0
+                        );
+
+                        return [pos, groundPoint];
                     }, false),
                     width: 3,
                     material: Cesium.Color.CYAN.withAlpha(0.7),
+                    // NONE: 强制两点之间走绝对直线（穿过大气层直达地心方向）
+                    // 如果设为 GEODESIC，线条会尝试贴合地球曲率，在高空场景下会显得扭曲
                     arcType: Cesium.ArcType.NONE,
                 }
             });
@@ -219,28 +234,32 @@ const SatelliteInfo: React.FC = () => {
                 position: positionProp,
                 polyline: {
                     positions: new Cesium.CallbackProperty(function (time: any) {
+                        // 获取当前时刻的位置 (pos) 和 姿态/旋转四元数 (ori)
                         const pos = positionProp?.getValue(time);
                         const ori = dynamicOrientationProp?.getValue(time);
                         if (!pos || !ori) return [];
 
-                        // 9.2 核心算法
+                        // 将四元数转为 3x3 旋转矩阵，从中提取第一列（通常代表实体的 X 轴，即前进方向）
+                        // 并将其归一化为单位向量
                         const forward = Cesium.Cartesian3.normalize(
                             Cesium.Matrix3.getColumn(Cesium.Matrix3.fromQuaternion(ori), 0, new Cesium.Cartesian3()),
                             new Cesium.Cartesian3()
                         );
 
-                        // 1. 显式构造并保存射线对象
+                        // 构造从卫星位置出发，沿 forward 方向发射的射线
                         const ray = new Cesium.Ray(pos, forward);
-                        // 获取相交区间 {start, stop} 或 undefined
+                        // 计算射线与 WGS84 地球椭球体的相交情况
                         const intersectionInterval = Cesium.IntersectionTests.rayEllipsoid(ray, Cesium.Ellipsoid.WGS84);
 
                         let endPoint;
                         if (intersectionInterval) {
-                            // 2. 必须使用 getPoint 将 {start, stop} 的区间长度转换成空间中的三维坐标点
+                            // 如果射线击中了地球，计算击中点的具体三维坐标
+                            // intersectionInterval.start 是射线起点到第一个交点的距离
                             endPoint = Cesium.Ray.getPoint(ray, intersectionInterval.start, new Cesium.Cartesian3());
                         } else {
-                            // 有交点连交点，没交点画一条超长线指向太空
+                            // 如果射线射向太空（没击中地球），则画一条 2000 公里长的虚构线段
                             const scaledForward = Cesium.Cartesian3.multiplyByScalar(forward, 2000000, new Cesium.Cartesian3());
+                            // 将卫星的当前位置与 2,000 公里的向量相加
                             endPoint = Cesium.Cartesian3.add(pos, scaledForward, new Cesium.Cartesian3());
                         }
 
@@ -257,9 +276,11 @@ const SatelliteInfo: React.FC = () => {
                         const ori = dynamicOrientationProp?.getValue(time);
                         if (!pos || !ori) return '';
 
-                        // 9.3 核心算法
+                        // 计算【天底向量】(Nadir)：从卫星指向地心的单位向量
                         const nadir = Cesium.Cartesian3.normalize(Cesium.Cartesian3.subtract(Cesium.Cartesian3.ZERO, pos, new Cesium.Cartesian3()), new Cesium.Cartesian3());
+                        // 获取【前向向量】(Forward)
                         const forward = Cesium.Cartesian3.normalize(Cesium.Matrix3.getColumn(Cesium.Matrix3.fromQuaternion(ori), 0, new Cesium.Cartesian3()), new Cesium.Cartesian3());
+                        // 通过两个单位向量的点积 (Dot Product) 计算它们之间的夹角弧度，并转为角度
                         const angleDegrees = Cesium.Math.toDegrees(Math.acos(Cesium.Math.clamp(Cesium.Cartesian3.dot(nadir, forward), -1.0, 1.0)));
 
                         return `夹角: ${angleDegrees.toFixed(1)}°`;
