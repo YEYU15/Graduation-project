@@ -60,6 +60,14 @@ const SatelliteInfo: React.FC = () => {
     // setTarget(entity)时：React 接收到通知，重新渲染组件
     const [target, setTarget] = useState<any>(null);
 
+    // ==========================================
+    // 新增：为搜索功能添加状态和 Ref
+    // ==========================================
+    // 存储用户在搜索框中输入的文字
+    const [searchInput, setSearchInput] = useState('');
+    // 这是一个巧妙的桥梁，用来将 useEffect 内部的作用域函数暴露给外面的按钮使用
+    const selectSatelliteRef = useRef<((searchStr: string) => void) | null>(null);
+
     useEffect(() => {
         const viewer = (window as any).viewer;
         const Cesium = (window as any).Cesium;
@@ -366,6 +374,68 @@ const SatelliteInfo: React.FC = () => {
 
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
+        // ==========================================
+        // 新增：搜索特定卫星并自动应用模型
+        // ==========================================
+        selectSatelliteRef.current = (searchStr: string) => {
+            let foundEntity: any = null;
+
+            // 1. 遍历所有的外部数据源 (如 CZML 加载的数据) 寻找匹配项
+            for (let i = 0; i < viewer.dataSources.length; i++) {
+                const ds = viewer.dataSources.get(i);
+                const entities = ds.entities.values;
+                // 支持按 ID 或者 按 Name 搜索
+                foundEntity = entities.find((e: any) => e.id === searchStr || e.name === searchStr);
+                if (foundEntity) break;
+            }
+
+            // 2. 如果外部数据源没找到，再到 viewer 默认的总池子里找
+            if (!foundEntity) {
+                const entities = viewer.entities.values;
+                foundEntity = entities.find((e: any) => e.id === searchStr || e.name === searchStr);
+            }
+
+            // 3. 没找到的提示
+            if (!foundEntity) {
+                alert(`未找到名称或 ID 为 "${searchStr}" 的卫星`);
+                return;
+            }
+
+            // 4. 判断找到的实体是不是卫星，并套用之前写的逻辑
+            const t = detectTarget(foundEntity.id, foundEntity.name);
+            if (t && t.kind === 'satellite') {
+                // 如果当前正好已经是这颗卫星了，那就只飞过去，不重新生成模型
+                if (lastModeledRef.current && lastModeledRef.current.entity === foundEntity) {
+                    viewer.flyTo(foundEntity, {
+                        duration: 1.5,
+                        offset: new Cesium.HeadingPitchRange(0, -Math.PI / 4, 10000)
+                    });
+                    return;
+                }
+
+                // 切换卫星时，先恢复上一颗的样子
+                if (lastModeledRef.current) {
+                    restoreEntityVisuals(lastModeledRef.current.entity, lastModeledRef.current.snapshot);
+                    viewer.entities.remove(lastModeledRef.current.overlayEntity);
+                    lastModeledRef.current.extraEntities?.forEach((ent: any) => viewer.entities.remove(ent));
+                }
+
+                // 更新 React 面板状态
+                setTarget(t);
+                // 直接复用你写好的核心覆盖方法！
+                applySatelliteModelToEntity(foundEntity, t.id);
+
+                // 视角平滑飞向搜索到的卫星
+                // Heading(偏航)0, Pitch(俯仰)-45度, Range(距离)10000米 确保能清楚看到模型
+                viewer.flyTo(foundEntity, {
+                    duration: 1.5,
+                    offset: new Cesium.HeadingPitchRange(0, -Math.PI / 4, 10000)
+                });
+            } else {
+                alert('找到的目标不是卫星！');
+            }
+        };
+
         // 组件卸载时清理事件和模型
         return () => {
             handler.destroy();
@@ -377,11 +447,18 @@ const SatelliteInfo: React.FC = () => {
         };
     }, []);
 
-    // 最底部的 return 现在极其干净
     return (
         <SatellitePanel
             target={target}
             lastModeledRef={lastModeledRef} // 把 ref 传给儿子，让它自己去拿数据
+            // ==========================================
+            // 新增：把刚才绑定的搜索方法传给面板组件
+            // ==========================================
+            onSearchRequest={(searchStr: string) => {
+                if (selectSatelliteRef.current) {
+                    selectSatelliteRef.current(searchStr);
+                }
+            }}
         />
     );
 };
