@@ -14,14 +14,14 @@
     "name": "earth",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -289,8 +289,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -610,15 +610,15 @@
     "name": "CALSPHERE_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -885,9 +885,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -1206,15 +1206,15 @@
     "name": "CALSPHERE_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -1481,9 +1481,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -1802,15 +1802,15 @@
     "name": "LCS_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -2077,9 +2077,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -2398,14 +2398,14 @@
     "name": "TEMPSAT_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -2673,8 +2673,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -2994,15 +2994,15 @@
     "name": "CALSPHERE_4A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -3269,9 +3269,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -3590,15 +3590,15 @@
     "name": "OPS_5712_P/L_160",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -3865,9 +3865,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -4186,15 +4186,15 @@
     "name": "LES-5",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -4461,9 +4461,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -4782,14 +4782,14 @@
     "name": "SURCAL_159",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -5057,8 +5057,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -5378,15 +5378,15 @@
     "name": "OPS_5712_P/L_153",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -5653,9 +5653,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -5974,15 +5974,15 @@
     "name": "OPS_3811_DSP_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -6249,9 +6249,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -6570,15 +6570,15 @@
     "name": "RIGIDSPHERE_2_LCS_4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -6845,9 +6845,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -7166,14 +7166,14 @@
     "name": "OSCAR_7_AO-7",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -7441,8 +7441,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -7762,15 +7762,15 @@
     "name": "STARLETTE",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -8037,9 +8037,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -8358,15 +8358,15 @@
     "name": "LAGEOS_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -8633,9 +8633,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -8954,15 +8954,15 @@
     "name": "OPS_8701_DSP_10",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -9229,9 +9229,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -9550,14 +9550,14 @@
     "name": "PHASE_3B_AO-10",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -9825,8 +9825,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -10146,15 +10146,15 @@
     "name": "UOSAT_2_UO-11",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -10421,9 +10421,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -10742,15 +10742,15 @@
     "name": "AJISAI_EGS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -11017,9 +11017,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -11338,15 +11338,15 @@
     "name": "TDRS_3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -11613,9 +11613,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -11934,14 +11934,14 @@
     "name": "COSMOS_1989_ETALON_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -12209,8 +12209,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -12530,15 +12530,15 @@
     "name": "COSMOS_2024_ETALON_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -12805,9 +12805,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -13126,15 +13126,15 @@
     "name": "FLTSATCOM_8_USA_46",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -13401,9 +13401,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -13722,15 +13722,15 @@
     "name": "LUSAT_LO-19",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -13997,9 +13997,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -14318,14 +14318,14 @@
     "name": "HST",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -14593,8 +14593,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -14914,15 +14914,15 @@
     "name": "SKYNET_4C",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -15189,9 +15189,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -15510,15 +15510,15 @@
     "name": "USA_65_DSP_15",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -15785,9 +15785,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -16106,15 +16106,15 @@
     "name": "TDRS_5",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -16381,9 +16381,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -16702,14 +16702,14 @@
     "name": "USA_75_DSP_16",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -16977,8 +16977,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -17298,15 +17298,15 @@
     "name": "TDRS_6",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -17573,9 +17573,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -17894,15 +17894,15 @@
     "name": "SCD_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -18169,9 +18169,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -18490,15 +18490,15 @@
     "name": "UFO_2_USA_95",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -18765,9 +18765,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -19086,14 +19086,14 @@
     "name": "STELLA",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -19361,8 +19361,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -19682,15 +19682,15 @@
     "name": "EYESAT_A_AO-27",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -19957,9 +19957,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -20278,15 +20278,15 @@
     "name": "ITAMSAT_IO-26",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -20553,9 +20553,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -20874,15 +20874,15 @@
     "name": "USA_99_MILSTAR-1_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -21149,9 +21149,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -21470,14 +21470,14 @@
     "name": "RADIO_ROSTO_RS15",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -21745,8 +21745,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -22066,15 +22066,15 @@
     "name": "UFO_4_USA_108",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -22341,9 +22341,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -22662,15 +22662,15 @@
     "name": "TDRS_7",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -22937,9 +22937,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -23258,15 +23258,15 @@
     "name": "USA_115_MILSTAR-1_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -23533,9 +23533,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -23854,14 +23854,14 @@
     "name": "POLAR",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -24129,8 +24129,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -24450,15 +24450,15 @@
     "name": "INMARSAT_3-F1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -24725,9 +24725,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -25046,15 +25046,15 @@
     "name": "USA_119",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -25321,9 +25321,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -25642,15 +25642,15 @@
     "name": "JAS-2_FO-29",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -25917,9 +25917,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -26238,14 +26238,14 @@
     "name": "INMARSAT_3-F2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -26513,8 +26513,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -26834,15 +26834,15 @@
     "name": "INMARSAT_3-F3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -27109,9 +27109,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -27430,15 +27430,15 @@
     "name": "NAVSTAR_43_USA_132",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -27705,9 +27705,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -28026,15 +28026,15 @@
     "name": "FORTE",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -28301,9 +28301,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -28622,14 +28622,14 @@
     "name": "AMC-3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -28897,8 +28897,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -29218,15 +29218,15 @@
     "name": "USA_134",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -29493,9 +29493,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -29814,15 +29814,15 @@
     "name": "ORBCOMM_FM06",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -30089,9 +30089,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -30410,15 +30410,15 @@
     "name": "INMARSAT_3-F5",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -30685,9 +30685,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -31006,14 +31006,14 @@
     "name": "ORBCOMM_FM04",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -31281,8 +31281,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -31602,15 +31602,15 @@
     "name": "CELESTIS-02_&_TAURUS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -31877,9 +31877,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -32198,15 +32198,15 @@
     "name": "TECHSAT_1B_GO-32",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -32473,9 +32473,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -32794,15 +32794,15 @@
     "name": "WESTPAC",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -33069,9 +33069,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -33390,14 +33390,14 @@
     "name": "ORBCOMM_FM19",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -33665,8 +33665,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -33986,15 +33986,15 @@
     "name": "ORBCOMM_FM20",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -34261,9 +34261,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -34582,15 +34582,15 @@
     "name": "ORBCOMM_FM27",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -34857,9 +34857,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -35178,15 +35178,15 @@
     "name": "SCD_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -35453,9 +35453,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -35774,14 +35774,14 @@
     "name": "ISS_ZARYA",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -36049,8 +36049,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -36370,15 +36370,15 @@
     "name": "SWAS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -36645,9 +36645,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -36966,15 +36966,15 @@
     "name": "SKYNET_4E",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -37241,9 +37241,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -37562,15 +37562,15 @@
     "name": "DLR-TUBSAT",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -37837,9 +37837,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -38158,14 +38158,14 @@
     "name": "CXO",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -38433,8 +38433,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -38754,15 +38754,15 @@
     "name": "ABS-6",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -39029,9 +39029,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -39350,15 +39350,15 @@
     "name": "NAVSTAR_46_USA_145",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -39625,9 +39625,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -39946,15 +39946,15 @@
     "name": "UFO_10_USA_146",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -40221,9 +40221,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -40542,14 +40542,14 @@
     "name": "ORBCOMM_FM32",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -40817,8 +40817,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -41138,15 +41138,15 @@
     "name": "XMM-NEWTON",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -41413,9 +41413,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -41734,15 +41734,15 @@
     "name": "TERRA",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -42009,9 +42009,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -42330,15 +42330,15 @@
     "name": "ASIASTAR",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -42605,9 +42605,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -42926,14 +42926,14 @@
     "name": "IMAGE",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -43201,8 +43201,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -43522,15 +43522,15 @@
     "name": "USA_149_DSP_20",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -43797,9 +43797,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -44118,15 +44118,15 @@
     "name": "TDRS_8",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -44393,9 +44393,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -44714,15 +44714,15 @@
     "name": "NAVSTAR_48_USA_151",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -44989,9 +44989,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -45310,14 +45310,14 @@
     "name": "CLUSTER_II-FM7_SAMBA",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -45585,8 +45585,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -45906,15 +45906,15 @@
     "name": "CLUSTER_II-FM8_TANGO",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -46181,9 +46181,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -46502,15 +46502,15 @@
     "name": "NSS-11",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -46777,9 +46777,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -47098,15 +47098,15 @@
     "name": "USA_153",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -47373,9 +47373,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -47694,14 +47694,14 @@
     "name": "AMC-6",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -47969,8 +47969,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -48290,15 +48290,15 @@
     "name": "NAVSTAR_49_USA_154",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -48565,9 +48565,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -48886,15 +48886,15 @@
     "name": "ODIN",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -49161,9 +49161,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -49482,15 +49482,15 @@
     "name": "USA_157_MILSTAR-2_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -49757,9 +49757,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -50078,14 +50078,14 @@
     "name": "BSAT-2A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -50353,8 +50353,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -50674,15 +50674,15 @@
     "name": "INTELSAT_10_IS-10",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -50949,9 +50949,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -51270,15 +51270,15 @@
     "name": "OMNI-M1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -51545,9 +51545,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -51866,15 +51866,15 @@
     "name": "USA_159_DSP_21",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -52141,9 +52141,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -52462,14 +52462,14 @@
     "name": "INTELSAT_902_IS-902",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -52737,8 +52737,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -53058,15 +53058,15 @@
     "name": "PCSAT_NO-44",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -53333,9 +53333,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -53654,15 +53654,15 @@
     "name": "PROBA-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -53929,9 +53929,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -54250,15 +54250,15 @@
     "name": "TIMED",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -54525,9 +54525,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -54846,14 +54846,14 @@
     "name": "MAROC-TUBSAT",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -55121,8 +55121,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -55442,15 +55442,15 @@
     "name": "COSMOS_2385",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -55717,9 +55717,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -56038,15 +56038,15 @@
     "name": "COSMOS_2386",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -56313,9 +56313,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -56634,15 +56634,15 @@
     "name": "USA_164_MILSTAR-2_3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -56909,9 +56909,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -57230,14 +57230,14 @@
     "name": "INTELSAT_904_IS-904",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -57505,8 +57505,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -57826,15 +57826,15 @@
     "name": "AQUA",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -58101,9 +58101,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -58422,15 +58422,15 @@
     "name": "DIRECTV_5_TEMPO_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -58697,9 +58697,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -59018,15 +59018,15 @@
     "name": "INTELSAT_905_IS-905",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -59293,9 +59293,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -59614,14 +59614,14 @@
     "name": "GALAXY_3C_G-3C",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -59889,8 +59889,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -60210,15 +60210,15 @@
     "name": "COSMOS_2390",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -60485,9 +60485,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -60806,15 +60806,15 @@
     "name": "COSMOS_2391",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -61081,9 +61081,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -61402,15 +61402,15 @@
     "name": "INTELSAT_906_IS-906",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -61677,9 +61677,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -61998,14 +61998,14 @@
     "name": "LATINSAT_B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -62273,8 +62273,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -62594,15 +62594,15 @@
     "name": "SAUDISAT_1C_SO-50",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -62869,9 +62869,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -63190,15 +63190,15 @@
     "name": "LATINSAT_A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -63465,9 +63465,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -63786,15 +63786,15 @@
     "name": "NIMIQ_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -64061,9 +64061,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -64382,14 +64382,14 @@
     "name": "CORIOLIS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -64657,8 +64657,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -64978,15 +64978,15 @@
     "name": "SORCE",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -65253,9 +65253,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -65574,15 +65574,15 @@
     "name": "NAVSTAR_51_USA_166",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -65849,9 +65849,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -66170,15 +66170,15 @@
     "name": "USA_167",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -66445,9 +66445,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -66766,14 +66766,14 @@
     "name": "NAVSTAR_52_USA_168",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -67041,8 +67041,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -67362,15 +67362,15 @@
     "name": "USA_169_MILSTAR-2_4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -67637,9 +67637,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -67958,15 +67958,15 @@
     "name": "ASIASAT_4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -68233,9 +68233,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -68554,15 +68554,15 @@
     "name": "HELLAS-SAT_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -68829,9 +68829,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -69150,14 +69150,14 @@
     "name": "THURAYA-2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -69425,8 +69425,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -69746,15 +69746,15 @@
     "name": "OPTUS_C1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -70021,9 +70021,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -70342,15 +70342,15 @@
     "name": "MOST",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -70617,9 +70617,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -70938,15 +70938,15 @@
     "name": "CUTE-1_CO-55",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -71213,9 +71213,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -71534,14 +71534,14 @@
     "name": "CUBESAT_XI-IV_CO-57",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -71809,8 +71809,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -72130,15 +72130,15 @@
     "name": "SCISAT_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -72405,9 +72405,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -72726,15 +72726,15 @@
     "name": "COSMOS_2400",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -73001,9 +73001,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -73322,15 +73322,15 @@
     "name": "COSMOS_2401",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -73597,9 +73597,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -73918,14 +73918,14 @@
     "name": "USA_170",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -74193,8 +74193,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -74514,15 +74514,15 @@
     "name": "MOZHAETS_4_RS22",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -74789,9 +74789,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -75110,15 +75110,15 @@
     "name": "LARETS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -75385,9 +75385,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -75706,15 +75706,15 @@
     "name": "GALAXY_13_HORIZONS-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -75981,9 +75981,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -76302,14 +76302,14 @@
     "name": "IRS-P6_RESOURCESAT-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -76577,8 +76577,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -76898,15 +76898,15 @@
     "name": "DMSP_5D-3_F16_USA_17",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -77173,9 +77173,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -77494,15 +77494,15 @@
     "name": "CHUANGXIN_1_CX-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -77769,9 +77769,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -78090,15 +78090,15 @@
     "name": "YAMAL_202",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -78365,9 +78365,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -78686,14 +78686,14 @@
     "name": "UFO_11_USA_174",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -78961,8 +78961,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -79282,15 +79282,15 @@
     "name": "NAVSTAR_53_USA_175",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -79557,9 +79557,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -79878,15 +79878,15 @@
     "name": "USA_176_DSP_22",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -80153,9 +80153,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -80474,15 +80474,15 @@
     "name": "ABS-4_MOBISAT-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -80749,9 +80749,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -81070,14 +81070,14 @@
     "name": "EUTELSAT_139_WEST_A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -81345,8 +81345,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -81666,15 +81666,15 @@
     "name": "NAVSTAR_54_USA_177",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -81941,9 +81941,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -82262,15 +82262,15 @@
     "name": "SHIYAN-1_SY-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -82537,9 +82537,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -82858,15 +82858,15 @@
     "name": "AMC-11",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -83133,9 +83133,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -83454,14 +83454,14 @@
     "name": "INTELSAT_10-02",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -83729,8 +83729,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -84050,15 +84050,15 @@
     "name": "NAVSTAR_55_USA_178",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -84325,9 +84325,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -84646,15 +84646,15 @@
     "name": "APRIZESAT_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -84921,9 +84921,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -85242,15 +85242,15 @@
     "name": "SAUDICOMSAT_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -85517,9 +85517,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -85838,14 +85838,14 @@
     "name": "SAUDICOMSAT_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -86113,8 +86113,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -86434,15 +86434,15 @@
     "name": "SAUDISAT_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -86709,9 +86709,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -87030,15 +87030,15 @@
     "name": "APRIZESAT_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -87305,9 +87305,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -87626,15 +87626,15 @@
     "name": "AURA",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -87901,9 +87901,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -88222,14 +88222,14 @@
     "name": "ANIK_F2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -88497,8 +88497,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -88818,15 +88818,15 @@
     "name": "COSMOS_2407",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -89093,9 +89093,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -89414,15 +89414,15 @@
     "name": "SHIJIAN-6_01A_SJ-6_0",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -89689,9 +89689,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -90010,15 +90010,15 @@
     "name": "SHIJIAN-6_01B_SJ-6_0",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -90285,9 +90285,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -90606,14 +90606,14 @@
     "name": "COSMOS_2408",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -90881,8 +90881,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -91202,15 +91202,15 @@
     "name": "COSMOS_2409",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -91477,9 +91477,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -91798,15 +91798,15 @@
     "name": "AMC-15",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -92073,9 +92073,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -92394,15 +92394,15 @@
     "name": "JB-3_3_ZY_2C",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -92669,9 +92669,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -92990,14 +92990,14 @@
     "name": "NAVSTAR_56_USA_180",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -93265,8 +93265,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -93586,15 +93586,15 @@
     "name": "SWIFT",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -93861,9 +93861,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -94182,15 +94182,15 @@
     "name": "NANOSAT-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -94457,9 +94457,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -94778,15 +94778,15 @@
     "name": "COSMOS_2414",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -95053,9 +95053,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -95374,14 +95374,14 @@
     "name": "NSS-10",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -95649,8 +95649,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -95970,15 +95970,15 @@
     "name": "XM-3_RHYTHM",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -96245,9 +96245,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -96566,15 +96566,15 @@
     "name": "INMARSAT_4-F1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -96841,9 +96841,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -97162,15 +97162,15 @@
     "name": "IRS-P5_CARTOSAT-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -97437,9 +97437,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -97758,14 +97758,14 @@
     "name": "DIRECTV_8",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -98033,8 +98033,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -98354,15 +98354,15 @@
     "name": "GALAXY_28_G-28",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -98629,9 +98629,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -98950,15 +98950,15 @@
     "name": "SJ-7",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -99225,9 +99225,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -99546,15 +99546,15 @@
     "name": "THAICOM_4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -99821,9 +99821,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -100142,14 +100142,14 @@
     "name": "REIMEI_INDEX",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -100417,8 +100417,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -100738,15 +100738,15 @@
     "name": "ANIK_F1R",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -101013,9 +101013,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -101334,15 +101334,15 @@
     "name": "NAVSTAR_57_USA_183",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -101609,9 +101609,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -101930,15 +101930,15 @@
     "name": "SYRACUSE_3A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -102205,9 +102205,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -102526,14 +102526,14 @@
     "name": "BEIJING_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -102801,8 +102801,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -103122,15 +103122,15 @@
     "name": "SINAH_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -103397,9 +103397,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -103718,15 +103718,15 @@
     "name": "CUBESAT_XI-V",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -103993,9 +103993,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -104314,15 +104314,15 @@
     "name": "INMARSAT_4-F2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -104589,9 +104589,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -104910,14 +104910,14 @@
     "name": "COSMOS_2416_RODNIK-S",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -105185,8 +105185,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -105506,15 +105506,15 @@
     "name": "METEOSAT-9_MSG-2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -105781,9 +105781,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -106102,15 +106102,15 @@
     "name": "EUTELSAT_174A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -106377,9 +106377,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -106698,15 +106698,15 @@
     "name": "ECHOSTAR_10",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -106973,9 +106973,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -107294,14 +107294,14 @@
     "name": "SPAINSAT",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -107569,8 +107569,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -107890,15 +107890,15 @@
     "name": "JCSAT-5A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -108165,9 +108165,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -108486,15 +108486,15 @@
     "name": "ASTRA_1KR",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -108761,9 +108761,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -109082,15 +109082,15 @@
     "name": "EROS_B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -109357,9 +109357,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -109678,14 +109678,14 @@
     "name": "RESURS-DK_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -109953,8 +109953,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -110274,15 +110274,15 @@
     "name": "GALAXY_16_G-16",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -110549,9 +110549,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -110870,15 +110870,15 @@
     "name": "ARIRANG-2_KOMPSAT-2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -111145,9 +111145,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -111466,15 +111466,15 @@
     "name": "EUTELSAT_33F",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -111741,9 +111741,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -112062,14 +112062,14 @@
     "name": "JCSAT-3A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -112337,8 +112337,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -112658,15 +112658,15 @@
     "name": "SYRACUSE_3B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -112933,9 +112933,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -113254,15 +113254,15 @@
     "name": "KOREASAT_5_MUGUNGWHA",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -113529,9 +113529,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -113850,15 +113850,15 @@
     "name": "HINODE_SOLAR-B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -114125,9 +114125,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -114446,14 +114446,14 @@
     "name": "NAVSTAR_58_USA_190",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -114721,8 +114721,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -115042,15 +115042,15 @@
     "name": "DIRECTV_9S",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -115317,9 +115317,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -115638,15 +115638,15 @@
     "name": "OPTUS_D1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -115913,9 +115913,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -116234,15 +116234,15 @@
     "name": "SHIJIAN-6_02A_SJ-6_0",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -116509,9 +116509,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -116830,14 +116830,14 @@
     "name": "SHIJIAN-6_02B_SJ-6_0",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -117105,8 +117105,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -117426,15 +117426,15 @@
     "name": "DMSP_5D-3_F17_USA_19",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -117701,9 +117701,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -118022,15 +118022,15 @@
     "name": "BADR-4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -118297,9 +118297,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -118618,15 +118618,15 @@
     "name": "NAVSTAR_59_USA_192",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -118893,9 +118893,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -119214,14 +119214,14 @@
     "name": "WILDBLUE-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -119489,8 +119489,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -119810,15 +119810,15 @@
     "name": "LAPAN-TUBSAT",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -120085,9 +120085,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -120406,15 +120406,15 @@
     "name": "THEMIS_A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -120681,9 +120681,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -121002,15 +121002,15 @@
     "name": "SKYNET_5A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -121277,9 +121277,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -121598,14 +121598,14 @@
     "name": "THEMIS_D",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -121873,8 +121873,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -122194,15 +122194,15 @@
     "name": "THEMIS_E",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -122469,9 +122469,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -122790,15 +122790,15 @@
     "name": "ANIK_F3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -123065,9 +123065,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -123386,15 +123386,15 @@
     "name": "HAIYANG-1B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -123661,9 +123661,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -123982,14 +123982,14 @@
     "name": "SAUDISAT_3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -124257,8 +124257,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -124578,15 +124578,15 @@
     "name": "SAUDICOMSAT_7",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -124853,9 +124853,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -125174,15 +125174,15 @@
     "name": "SAUDICOMSAT_6",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -125449,9 +125449,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -125770,15 +125770,15 @@
     "name": "SAUDICOMSAT_5",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -126045,9 +126045,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -126366,14 +126366,14 @@
     "name": "SAUDICOMSAT_3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -126641,8 +126641,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -126962,15 +126962,15 @@
     "name": "SAUDICOMSAT_4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -127237,9 +127237,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -127558,15 +127558,15 @@
     "name": "ASTRA_1L",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -127833,9 +127833,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -128154,15 +128154,15 @@
     "name": "GALAXY_17_G-17",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -128429,9 +128429,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -128750,14 +128750,14 @@
     "name": "YAOGAN-2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -129025,8 +129025,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -129346,15 +129346,15 @@
     "name": "GLOBALSTAR_M069",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -129621,9 +129621,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -129942,15 +129942,15 @@
     "name": "GLOBALSTAR_M072",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -130217,9 +130217,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -130538,15 +130538,15 @@
     "name": "COSMO-SKYMED_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -130813,9 +130813,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -131134,14 +131134,14 @@
     "name": "TERRASAR-X",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -131409,8 +131409,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -131730,15 +131730,15 @@
     "name": "COSMOS_2428",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -132005,9 +132005,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -132326,15 +132326,15 @@
     "name": "ZHONGXING-6B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -132601,9 +132601,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -132922,15 +132922,15 @@
     "name": "DIRECTV_10",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -133197,9 +133197,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -133518,14 +133518,14 @@
     "name": "WORLDVIEW-1_WV-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -133793,8 +133793,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -134114,15 +134114,15 @@
     "name": "INTELSAT_11_IS-11",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -134389,9 +134389,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -134710,15 +134710,15 @@
     "name": "WGS_F1_USA_195",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -134985,9 +134985,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -135306,15 +135306,15 @@
     "name": "NAVSTAR_60_USA_196",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -135581,9 +135581,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -135902,14 +135902,14 @@
     "name": "GLOBALSTAR_M066",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -136177,8 +136177,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -136498,15 +136498,15 @@
     "name": "COSMOS_2433_[GLONASS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -136773,9 +136773,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -137094,15 +137094,15 @@
     "name": "COSMOS_2432_[GLONASS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -137369,9 +137369,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -137690,15 +137690,15 @@
     "name": "YAOGAN-3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -137965,9 +137965,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -138286,14 +138286,14 @@
     "name": "SKYNET_5B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -138561,8 +138561,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -138882,15 +138882,15 @@
     "name": "ASTRA_4A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -139157,9 +139157,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -139478,15 +139478,15 @@
     "name": "COSMO-SKYMED_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -139753,9 +139753,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -140074,15 +140074,15 @@
     "name": "RADARSAT-2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -140349,9 +140349,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -140670,14 +140670,14 @@
     "name": "NAVSTAR_61_USA_199",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -140945,8 +140945,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -141266,15 +141266,15 @@
     "name": "HORIZONS-2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -141541,9 +141541,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -141862,15 +141862,15 @@
     "name": "COSMOS_2434_[GLONASS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -142137,9 +142137,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -142458,15 +142458,15 @@
     "name": "COSMOS_2436_[GLONASS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -142733,9 +142733,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -143054,14 +143054,14 @@
     "name": "THURAYA-3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -143329,8 +143329,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -143650,15 +143650,15 @@
     "name": "THOR_5",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -143925,9 +143925,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -144246,15 +144246,15 @@
     "name": "AMC-14",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -144521,9 +144521,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -144842,15 +144842,15 @@
     "name": "NAVSTAR_62_USA_201",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -145117,9 +145117,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -145438,14 +145438,14 @@
     "name": "DIRECTV_11",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -145713,8 +145713,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -146034,15 +146034,15 @@
     "name": "ICO_G1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -146309,9 +146309,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -146630,15 +146630,15 @@
     "name": "VINASAT-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -146905,9 +146905,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -147226,15 +147226,15 @@
     "name": "STAR_ONE_C2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -147501,9 +147501,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -147822,14 +147822,14 @@
     "name": "CARTOSAT-2A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -148097,8 +148097,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -148418,15 +148418,15 @@
     "name": "CUTE-1.7+APD_II_CO-6",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -148693,9 +148693,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -149014,15 +149014,15 @@
     "name": "CANX-2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -149289,9 +149289,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -149610,15 +149610,15 @@
     "name": "SEEDS_II_CO-66",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -149885,9 +149885,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -150206,14 +150206,14 @@
     "name": "AMOS-3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -150481,8 +150481,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -150802,15 +150802,15 @@
     "name": "GALAXY_18_G-18",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -151077,9 +151077,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -151398,15 +151398,15 @@
     "name": "YUBILEINY_RS30",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -151673,9 +151673,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -151994,15 +151994,15 @@
     "name": "COSMOS_2437",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -152269,9 +152269,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -152590,14 +152590,14 @@
     "name": "COSMOS_2438",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -152865,8 +152865,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -153186,15 +153186,15 @@
     "name": "COSMOS_2439",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -153461,9 +153461,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -153782,15 +153782,15 @@
     "name": "FENGYUN_3A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -154057,9 +154057,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -154378,15 +154378,15 @@
     "name": "ZHONGXING-9",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -154653,9 +154653,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -154974,14 +154974,14 @@
     "name": "FGRST_GLAST",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -155249,8 +155249,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -155570,15 +155570,15 @@
     "name": "SKYNET_5C",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -155845,9 +155845,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -156166,15 +156166,15 @@
     "name": "TURKSAT_3A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -156441,9 +156441,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -156762,15 +156762,15 @@
     "name": "INTELSAT_25_IS-25",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -157037,9 +157037,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -157358,14 +157358,14 @@
     "name": "ECHOSTAR_11",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -157633,8 +157633,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -157954,15 +157954,15 @@
     "name": "SUPERBIRD-C2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -158229,9 +158229,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -158550,15 +158550,15 @@
     "name": "AMC-21",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -158825,9 +158825,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -159146,15 +159146,15 @@
     "name": "INMARSAT_4-F3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -159421,9 +159421,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -159742,14 +159742,14 @@
     "name": "HUANJING_1A_HJ-1A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -160017,8 +160017,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -160338,15 +160338,15 @@
     "name": "HUANJING_1B_HJ-1B",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -160613,9 +160613,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -160934,15 +160934,15 @@
     "name": "GEOEYE_1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -161209,9 +161209,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -161530,15 +161530,15 @@
     "name": "NIMIQ_4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -161805,9 +161805,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -162126,14 +162126,14 @@
     "name": "GALAXY_19_G-19",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -162401,8 +162401,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -162722,15 +162722,15 @@
     "name": "THEOS",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -162997,9 +162997,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -163318,15 +163318,15 @@
     "name": "SHIJIAN-6_03A_SJ-6_0",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -163593,9 +163593,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -163914,15 +163914,15 @@
     "name": "SHIJIAN-6_03B_SJ-6_0",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -164189,9 +164189,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -164510,14 +164510,14 @@
     "name": "COSMO-SKYMED_3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -164785,8 +164785,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -165106,15 +165106,15 @@
     "name": "SHIYAN-3_SY-3",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -165381,9 +165381,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -165702,15 +165702,15 @@
     "name": "CHUANGXIN_1-02_CX-1-",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -165977,9 +165977,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -166298,15 +166298,15 @@
     "name": "ASTRA_1M",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -166573,9 +166573,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -166894,14 +166894,14 @@
     "name": "YAOGAN-4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -167169,8 +167169,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -167490,15 +167490,15 @@
     "name": "EUTELSAT_HOTBIRD_13C",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -167765,9 +167765,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -168086,15 +168086,15 @@
     "name": "GOSAT_IBUKI",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -168361,9 +168361,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -168682,15 +168682,15 @@
     "name": "STARS_KUKAI",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -168957,9 +168957,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -169278,14 +169278,14 @@
     "name": "KKS-1_KISEKI",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -169553,8 +169553,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -169874,15 +169874,15 @@
     "name": "EXPRESS-AM44",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -170149,9 +170149,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -170470,15 +170470,15 @@
     "name": "NSS-9",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -170745,9 +170745,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -171066,15 +171066,15 @@
     "name": "TELSTAR_11N",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -171341,9 +171341,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -171662,14 +171662,14 @@
     "name": "NAVSTAR_63_USA_203",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -171937,8 +171937,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -172258,15 +172258,15 @@
     "name": "WGS_F2_USA_204",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -172533,9 +172533,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -172854,15 +172854,15 @@
     "name": "SES-7_PROTOSTAR_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -173129,9 +173129,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -173450,15 +173450,15 @@
     "name": "MEASAT-3A",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -173725,9 +173725,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -174046,14 +174046,14 @@
     "name": "GOES_14",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -174321,8 +174321,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -174642,15 +174642,15 @@
     "name": "FM-5",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -174917,9 +174917,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -175238,15 +175238,15 @@
     "name": "TERRESTAR-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -175513,9 +175513,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -175834,15 +175834,15 @@
     "name": "COSMOS_2451",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -176109,9 +176109,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -176430,14 +176430,14 @@
     "name": "COSMOS_2453",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -176705,8 +176705,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
@@ -177026,15 +177026,15 @@
     "name": "DEIMOS-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              0,
-              255,
+              103,
+              194,
+              58,
               255
             ]
           }
@@ -177301,9 +177301,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          0,
-          255,
+          103,
+          194,
+          58,
           255
         ]
       },
@@ -177622,15 +177622,15 @@
     "name": "DUBAISAT-1",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              255,
-              255,
-              0,
+              230,
+              162,
+              60,
               255
             ]
           }
@@ -177897,9 +177897,9 @@
       },
       "outlineColor": {
         "rgba": [
-          255,
-          255,
-          0,
+          230,
+          162,
+          60,
           255
         ]
       },
@@ -178218,15 +178218,15 @@
     "name": "UK-DMC_2",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
-              0,
+              245,
+              108,
+              108,
               255
             ]
           }
@@ -178493,9 +178493,9 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
-          0,
+          245,
+          108,
+          108,
           255
         ]
       },
@@ -178814,14 +178814,14 @@
     "name": "APRIZESAT_4",
     "availability": "2019-01-01T00:00:00Z/2019-01-01T01:00:00Z",
     "path": {
-      "show": true,
+      "show": false,
       "width": 2,
       "material": {
         "solidColor": {
           "color": {
             "rgba": [
-              0,
-              255,
+              64,
+              158,
               255,
               255
             ]
@@ -179089,8 +179089,8 @@
       },
       "outlineColor": {
         "rgba": [
-          0,
-          255,
+          64,
+          158,
           255,
           255
         ]
