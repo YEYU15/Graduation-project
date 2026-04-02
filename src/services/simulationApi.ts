@@ -1,7 +1,7 @@
 // 模拟文档中的 getConstellationCzml 函数
 export const getConstellationCzml = async () => {
   // 这里暂时请求我们刚刚创建的本地静态文件
-  const response = await fetch('/test.czml');
+  const response = await fetch('/real_starlink_orbit.czml');
   const data = await response.json();
 
   return {

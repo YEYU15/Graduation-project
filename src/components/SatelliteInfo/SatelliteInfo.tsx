@@ -144,7 +144,7 @@ const SatelliteInfo: React.FC = () => {
 
                             // 4. 绕星下线自旋
                             const julianTime = Cesium.JulianDate.toDate(time).getTime();
-                            const spinAngle = (julianTime / 3000) % (2 * Math.PI);
+                            const spinAngle = (julianTime / 600000) % (2 * Math.PI);
                             const spinQuat = Cesium.Quaternion.fromAxisAngle(nadirAxis, spinAngle, new Cesium.Quaternion());
                             const rotatedRight = Cesium.Matrix3.multiplyByVector(
                                 Cesium.Matrix3.fromQuaternion(spinQuat),
