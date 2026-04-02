@@ -1,4 +1,3 @@
-```markdown
 # 🛰️ Starlink Real-time Orbit Simulation (毕业设计)
 
 这是一个基于真实 TLE (两行轨道数据) 的星链卫星轨道推演与可视化项目。项目通过 Python 进行 SGP4 轨道计算，生成 CZML 并在前端 Cesium 场景中实时展示。
@@ -54,4 +53,3 @@ npm run dev
 
 * **性能优化**：若 Cesium 渲染卡顿，可修改 `generate_real_czml.py` 中的 `TIME_STEP_SECONDS`（采样间隔）。将其从 60 调大至 180 或 300 可显著减小文件体积。
 * **坐标系统**：推演采用 **ITRS (ECEF)** 地球固连坐标系，确保卫星位置与地球自转完全同步。
-```
