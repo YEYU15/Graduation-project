@@ -32,3 +32,5 @@ env/
 __pycache__/
 *.py[cod]
 *$py.class
+
+public/real_starlink_orbit.czml
