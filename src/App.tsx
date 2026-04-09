@@ -20,6 +20,7 @@ function App() {
       baseLayerPicker: true,     // 右上角图层选择器
       geocoder: false,           // 禁用地名查找
       sceneModePicker: false,    // 禁用 2D/3D 切换
+      infoBox: false,            // 新增：彻底关闭右上角的原生态黑框
     });
 
     // 2. 挂载到全局 window

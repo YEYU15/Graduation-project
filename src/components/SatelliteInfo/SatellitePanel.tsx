@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import Stats from 'stats.js';
 
 // 定义属性接口：target 是选中的卫星数据，lastModeledRef 用于跨组件访问 Cesium 实体
 interface SatellitePanelProps {
@@ -28,6 +29,91 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
         quaternion?: { x: number; y: number; z: number; w: number };
         euler?: { heading: number; pitch: number; roll: number };
     } | null>(null);
+
+    // 新增：用于挂载 Stats 面板的容器
+    const statsContainerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const stats = new Stats();
+        const container = stats.dom;
+
+        container.style.position = 'static';
+        container.style.display = 'flex';
+        container.style.width = '100%';
+        container.style.justifyContent = 'space-between';
+        container.style.pointerEvents = 'none';
+
+        const fpsCanvas = container.children[0] as HTMLElement;
+        const msCanvas = container.children[1] as HTMLElement;
+        const mbCanvas = container.children[2] as HTMLElement;
+
+        // 显示 FPS 和 MS，隐藏原生的 MB 面板
+        fpsCanvas.style.display = 'block';
+        msCanvas.style.display = 'block';
+        mbCanvas.style.display = 'none';
+
+        // ==========================================
+        // 核心黑科技：创建一个完全模仿 Stats.js 风格的自定义面板
+        // 用来显示 WebGL 核心指标：Draw Calls
+        // ==========================================
+        const dcPanel = document.createElement('div');
+        // 像素级复刻 Stats.js 的原生样式
+        dcPanel.style.width = '80px';
+        dcPanel.style.height = '48px';
+        dcPanel.style.background = '#002'; // 深蓝色背景
+        dcPanel.style.color = '#0ff';      // 青色文字
+        dcPanel.style.fontFamily = 'Helvetica, Arial, sans-serif';
+        dcPanel.style.fontSize = '9px';
+        dcPanel.style.fontWeight = 'bold';
+        dcPanel.style.lineHeight = '15px';
+        dcPanel.style.padding = '2px 0 0 3px';
+        dcPanel.style.boxSizing = 'border-box';
+        // 内部结构：标题 + 数值
+        dcPanel.innerHTML = `DRAW CALLS<br><span id="cesium-dc-value" style="font-size:24px; line-height:26px;">0</span>`;
+
+        // 将自定义面板塞进 Stats 容器的最后（原本 MB 面板的位置）
+        container.appendChild(dcPanel);
+
+        if (statsContainerRef.current) {
+            statsContainerRef.current.innerHTML = '';
+            statsContainerRef.current.appendChild(container);
+        }
+
+        let animationFrameId: number;
+
+        const animate = () => {
+            stats.update(); // 更新原生的 FPS 和 MS
+
+            // ==========================================
+            // 从 Cesium 底层强行提取 Draw Calls 数据
+            // ==========================================
+            const viewer = (window as any).viewer;
+            if (viewer && viewer.scene) {
+                // 兼容不同 Cesium 版本的底层私有属性提取方式
+                const drawCalls =
+                    viewer.scene._performanceDisplay?._drawCommands ||
+                    viewer.scene.frameState?.commandList?.length ||
+                    viewer.scene._commandList?.length ||
+                    0;
+
+                // 更新面板数值
+                const dcSpan = document.getElementById('cesium-dc-value');
+                if (dcSpan) {
+                    dcSpan.innerText = drawCalls.toString();
+                }
+            }
+
+            animationFrameId = requestAnimationFrame(animate);
+        };
+        animate();
+
+        return () => {
+            cancelAnimationFrame(animationFrameId);
+            if (statsContainerRef.current) {
+                statsContainerRef.current.innerHTML = '';
+            }
+        };
+    }, []);
 
     // 处理 Cesium 时钟监听
     useEffect(() => {
@@ -124,9 +210,29 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
                 // ==========================================
                 // 修改：必须改为 'auto'，否则无法点击输入框和按钮
                 // ==========================================
-                pointerEvents: 'auto'
+                pointerEvents: 'auto',
+                // ==========================================
+                // 使用 Flex 布局，让内部元素从上到下垂直排列
+                // 并给一个最小宽度，防止面板被内容挤变形
+                // ==========================================
+                display: 'flex',
+                flexDirection: 'column',
+                minWidth: '280px'
             }}
         >
+            {/* ==========================================
+            新增改动 Stats.js 挂载点
+            增加了 display: flex 和 justifyContent: 'flex-end'
+            作用是把 FPS 面板推到容器的右上角
+            ========================================== */}
+            {/* 改为下面的样子： */}
+            <div
+                ref={statsContainerRef}
+                style={{
+                    marginBottom: '15px',
+                    width: '100%' // 确保外层容器撑满 100%
+                }}
+            />
             {/* ==========================================
                 新增：面板内的搜索工具栏区域
                 ========================================== */}
