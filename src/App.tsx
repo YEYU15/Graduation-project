@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import * as Cesium from 'cesium';
-import 'cesium/Build/Cesium/Widgets/widgets.css'; // 必须引入 Cesium 原生样式
+import 'cesium/Build/Cesium/Widgets/widgets.css';
 import ConstellationSelector from './components/ConstellationSelector/ConstellationSelector';
-// 【改动 1】：引入刚刚创建的卫星模型与控制组件
 import SatelliteInfo from './components/SatelliteInfo/SatelliteInfo';
 
 function App() {
