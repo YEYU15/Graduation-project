@@ -129,18 +129,27 @@ const SatelliteInfo: React.FC = () => {
                             // 获取一个表示卫星运动方向的单位向量
                             Cesium.Cartesian3.normalize(velocity, velocity);
 
-                            // 3. 右向量
-                            // 星下线方向 × 速度方向
+                            // ==========================================
+                            // 3. 右向量计算与奇异点容错处理
+                            // ==========================================
+                            // 初算：星下线方向 × 速度方向
                             let right = Cesium.Cartesian3.cross(nadirAxis, velocity, new Cesium.Cartesian3());
-                            Cesium.Cartesian3.normalize(right, right);
 
-                            // 处理极点奇异性
+                            // 容错降级机制：如果叉乘结果趋近于零向量（速度与星下线平行）
                             if (Cesium.Cartesian3.magnitude(right) < 0.01) {
-                                // 地心指向卫星，好像仍然平行，无法计算
-                                const up = Cesium.Cartesian3.normalize(position, new Cesium.Cartesian3());
-                                right = Cesium.Cartesian3.cross(nadirAxis, up, new Cesium.Cartesian3());
-                                Cesium.Cartesian3.normalize(right, right);
+                                // 一级容错：采用地球北极向量（正北Z轴）作为全局恒定参考
+                                const northPole = new Cesium.Cartesian3(0, 0, 1);
+                                right = Cesium.Cartesian3.cross(nadirAxis, northPole, new Cesium.Cartesian3());
+
+                                // 二次容错：如果卫星恰巧位于地球两极正上方（星下线与Z轴共线）
+                                if (Cesium.Cartesian3.magnitude(right) < 0.01) {
+                                    const xAxis = new Cesium.Cartesian3(1, 0, 0);
+                                    right = Cesium.Cartesian3.cross(nadirAxis, xAxis, new Cesium.Cartesian3());
+                                }
                             }
+                            // 最终统一进行归一化，确保得到单位向量
+                            Cesium.Cartesian3.normalize(right, right);
+                            // ==========================================
 
                             // 4. 绕星下线自旋
                             const julianTime = Cesium.JulianDate.toDate(time).getTime();

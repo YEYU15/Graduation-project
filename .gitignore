@@ -34,3 +34,4 @@ __pycache__/
 *$py.class
 
 public/real_starlink_orbit.czml
+public/real_starlink_orbit_with_gltf.czml

@@ -40,71 +40,123 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
         container.style.position = 'static';
         container.style.display = 'flex';
         container.style.width = '100%';
-        container.style.justifyContent = 'space-between';
+        container.style.justifyContent = 'flex-start'; // 改为靠左排列，方便放4个面板
+        container.style.gap = '5px'; // 面板之间的间距
         container.style.pointerEvents = 'none';
 
         const fpsCanvas = container.children[0] as HTMLElement;
         const msCanvas = container.children[1] as HTMLElement;
         const mbCanvas = container.children[2] as HTMLElement;
 
-        // 显示 FPS 和 MS，隐藏原生的 MB 面板
+        // 显示原生的 FPS 和 MS，隐藏原生的 MB 面板
         fpsCanvas.style.display = 'block';
         msCanvas.style.display = 'block';
         mbCanvas.style.display = 'none';
 
         // ==========================================
-        // 核心黑科技：创建一个完全模仿 Stats.js 风格的自定义面板
-        // 用来显示 WebGL 核心指标：Draw Calls
+        // 面板 1：原有的实时 Draw Calls 面板 (青色)
         // ==========================================
         const dcPanel = document.createElement('div');
-        // 像素级复刻 Stats.js 的原生样式
         dcPanel.style.width = '80px';
         dcPanel.style.height = '48px';
-        dcPanel.style.background = '#002'; // 深蓝色背景
-        dcPanel.style.color = '#0ff';      // 青色文字
+        dcPanel.style.background = '#002';
+        dcPanel.style.color = '#0ff';
         dcPanel.style.fontFamily = 'Helvetica, Arial, sans-serif';
         dcPanel.style.fontSize = '9px';
         dcPanel.style.fontWeight = 'bold';
         dcPanel.style.lineHeight = '15px';
         dcPanel.style.padding = '2px 0 0 3px';
         dcPanel.style.boxSizing = 'border-box';
-        // 内部结构：标题 + 数值
         dcPanel.innerHTML = `DRAW CALLS<br><span id="cesium-dc-value" style="font-size:24px; line-height:26px;">0</span>`;
 
-        // 将自定义面板塞进 Stats 容器的最后（原本 MB 面板的位置）
+        // ==========================================
+        // 面板 2：全新的平均数据聚合面板 (黄绿色)
+        // ==========================================
+        const avgPanel = document.createElement('div');
+        avgPanel.style.width = '90px'; // 稍微宽一点容纳三行字
+        avgPanel.style.height = '48px';
+        avgPanel.style.background = '#020'; // 深绿色背景区分一下
+        avgPanel.style.color = '#8f8';      // 浅绿色标题文字
+        avgPanel.style.fontFamily = 'Helvetica, Arial, sans-serif';
+        avgPanel.style.fontSize = '9px';
+        avgPanel.style.fontWeight = 'bold';
+        avgPanel.style.lineHeight = '13px'; // 行高调小，塞下三行
+        avgPanel.style.padding = '2px 0 0 3px';
+        avgPanel.style.boxSizing = 'border-box';
+        avgPanel.innerHTML = `AVERAGES<br>
+            <div style="color:#ffeb3b; font-size:10px; margin-top:1px;">
+                FPS: <span id="avg-fps-val">0</span><br>
+                MS: <span id="avg-ms-val">0</span><br>
+                DC: <span id="avg-dc-val">0</span>
+            </div>`;
+
+        // 将自定义的两个面板塞进 Stats 容器
         container.appendChild(dcPanel);
+        container.appendChild(avgPanel);
 
         if (statsContainerRef.current) {
             statsContainerRef.current.innerHTML = '';
             statsContainerRef.current.appendChild(container);
         }
 
+        // --- 用于计算平均值的全局状态 ---
         let animationFrameId: number;
+        let frameCount = 0;
+        let totalMs = 0;
+        let totalDc = 0;
+        let startTime = performance.now();
+        let lastFrameTime = startTime;
 
         const animate = () => {
             stats.update(); // 更新原生的 FPS 和 MS
 
-            // ==========================================
-            // 从 Cesium 底层强行提取 Draw Calls 数据
-            // ==========================================
+            const now = performance.now();
+            const deltaMs = now - lastFrameTime;
+            lastFrameTime = now;
+
             const viewer = (window as any).viewer;
+            let currentDrawCalls = 0;
+
             if (viewer && viewer.scene) {
-                // 兼容不同 Cesium 版本的底层私有属性提取方式
-                const drawCalls =
+                // 1. 获取当前帧真实的 Draw Calls
+                currentDrawCalls =
                     viewer.scene._performanceDisplay?._drawCommands ||
                     viewer.scene.frameState?.commandList?.length ||
                     viewer.scene._commandList?.length ||
                     0;
 
-                // 更新面板数值
+                // 2. 更新原有的实时 DC 面板
                 const dcSpan = document.getElementById('cesium-dc-value');
                 if (dcSpan) {
-                    dcSpan.innerText = drawCalls.toString();
+                    dcSpan.innerText = currentDrawCalls.toString();
+                }
+            }
+
+            // 3. 计算并更新平均值面板 (剔除前 2 秒的初始化波动卡顿)
+            if (now - startTime > 2000) {
+                frameCount++;
+                totalMs += deltaMs;
+                totalDc += currentDrawCalls;
+
+                // 为了不影响渲染性能，每 30 帧 (约 0.5 秒) 更新一次 DOM 文字
+                if (frameCount % 30 === 0) {
+                    const avgFps = Math.round((frameCount / totalMs) * 1000);
+                    const avgMs = (totalMs / frameCount).toFixed(1);
+                    const avgDc = Math.round(totalDc / frameCount);
+
+                    const fpsNode = document.getElementById('avg-fps-val');
+                    const msNode = document.getElementById('avg-ms-val');
+                    const dcNode = document.getElementById('avg-dc-val');
+
+                    if (fpsNode) fpsNode.innerText = avgFps.toString();
+                    if (msNode) msNode.innerText = avgMs.toString();
+                    if (dcNode) dcNode.innerText = avgDc.toString();
                 }
             }
 
             animationFrameId = requestAnimationFrame(animate);
         };
+
         animate();
 
         return () => {

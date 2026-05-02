@@ -13,6 +13,7 @@ function App() {
     if (!containerRef.current) return;
 
     // 1. 初始化 Cesium Viewer
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjNzA4ZDEzZS03ZTYxLTRiOWItOTA5NS0xYTQyOWEwMmFlZTkiLCJpZCI6NDI2MzIyLCJpc3MiOiJodHRwczovL2lvbi5jZXNpdW0uY29tIiwiYXVkIjoidW5kZWZpbmVkX2RlZmF1bHQiLCJpYXQiOjE3Nzc2OTA1NDd9.hAiRKUZlNbpOC0d-y8dLHpjCbRRYEmCKqyzJZQR4Rfc';
     const cesiumViewer = new Cesium.Viewer(containerRef.current, {
       animation: true,           // 左下角动画控件
       timeline: true,            // 底部时间轴
