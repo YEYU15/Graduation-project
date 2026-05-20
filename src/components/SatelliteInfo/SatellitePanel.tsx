@@ -10,16 +10,12 @@ interface SatellitePanelProps {
         overlayEntity: any;
         extraEntities?: any[]
     } | null>;
-    // ==========================================
-    // 新增：父组件传递过来的搜索执行函数
-    // ==========================================
+    // 父组件传递过来的搜索执行函数
     onSearchRequest: (searchStr: string) => void;
 }
 
 const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef, onSearchRequest }) => {
-    // ==========================================
-    // 新增：组件内部输入框状态
-    // ==========================================
+    // 组件内部输入框状态
     // 存储用户在面板内搜索框中输入的文字
     const [inputValue, setInputValue] = useState('');
 
@@ -30,7 +26,7 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
         euler?: { heading: number; pitch: number; roll: number };
     } | null>(null);
 
-    // 新增：用于挂载 Stats 面板的容器
+    // 用于挂载 Stats 面板的容器
     const statsContainerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -53,9 +49,7 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
         msCanvas.style.display = 'block';
         mbCanvas.style.display = 'none';
 
-        // ==========================================
         // 面板 1：原有的实时 Draw Calls 面板 (青色)
-        // ==========================================
         const dcPanel = document.createElement('div');
         dcPanel.style.width = '80px';
         dcPanel.style.height = '48px';
@@ -69,9 +63,7 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
         dcPanel.style.boxSizing = 'border-box';
         dcPanel.innerHTML = `DRAW CALLS<br><span id="cesium-dc-value" style="font-size:24px; line-height:26px;">0</span>`;
 
-        // ==========================================
         // 面板 2：全新的平均数据聚合面板 (黄绿色)
-        // ==========================================
         const avgPanel = document.createElement('div');
         avgPanel.style.width = '90px'; // 稍微宽一点容纳三行字
         avgPanel.style.height = '48px';
@@ -125,7 +117,7 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
                     viewer.scene._commandList?.length ||
                     0;
 
-                // 2. 更新原有的实时 DC 面板
+                // 2. 更新原有的实时 Draw Calls 面板
                 const dcSpan = document.getElementById('cesium-dc-value');
                 if (dcSpan) {
                     dcSpan.innerText = currentDrawCalls.toString();
@@ -138,7 +130,7 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
                 totalMs += deltaMs;
                 totalDc += currentDrawCalls;
 
-                // 为了不影响渲染性能，每 30 帧 (约 0.5 秒) 更新一次 DOM 文字
+                // 为了不影响渲染性能，每 30 帧更新一次 DOM 文字
                 if (frameCount % 30 === 0) {
                     const avgFps = Math.round((frameCount / totalMs) * 1000);
                     const avgMs = (totalMs / frameCount).toFixed(1);
@@ -172,17 +164,15 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
         const viewer = (window as any).viewer;
         const Cesium = (window as any).Cesium;
 
-        // ==========================================
-        // 修改：即使没有 target，useEffect 也要运行，
+        // 即使没有 target，useEffect 也要运行，
         // 但需要判断 viewer 是否存在，且只在有 target 时清理旧状态
-        // ==========================================
         if (!viewer || !Cesium) return;
 
         // 绑定监听器的前提是必须有 target 且 viewer 已准备好
         // 两次取反强行转为布尔型
         const hasTarget = !!target;
 
-        // 【核心回调函数】Cesium 每渲染一帧（通常 60fps）都会执行一次
+        // 【核心回调函数】Cesium 每渲染一帧都会执行一次
         const handleTick = (clock: any) => {
             if (!hasTarget) return; // 没有目标时不执行具体计算逻辑
 
@@ -230,11 +220,6 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
         // 当 [target, lastModeledRef] 发生变化时，执行 useEffect 
     }, [target, lastModeledRef]);
 
-    // ==========================================
-    // 修改：删除了“如果没有选中卫星就 return null”的逻辑
-    // 为了显示搜索框，面板必须一直渲染
-    // ==========================================
-
     // 内部处理搜索提交的辅助函数
     const handleDoSearch = () => {
         if (inputValue.trim() && onSearchRequest) {
@@ -249,24 +234,16 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
             style={{
                 position: 'absolute',
                 left: 20,
-                // ==========================================
-                // 修改：建议将原 bottom 改为 top，
-                // 因为搜索框通常在上方，下方留给数据展示
-                // ==========================================
-                top: 20, // 放在左上角
-                background: 'rgba(0,0,0,0.7)', // 半透明黑色背景（GIS 常用风格）
+                top: 20,
+                background: 'rgba(0,0,0,0.7)',
                 color: 'white',        // 白色文字
                 padding: '15px',       // 内边距
                 borderRadius: '8px',   // 圆角
                 zIndex: 999,           // 确保置于地图最上方
-                // ==========================================
-                // 修改：必须改为 'auto'，否则无法点击输入框和按钮
-                // ==========================================
+                // 必须改为 'auto'，否则无法点击输入框和按钮
                 pointerEvents: 'auto',
-                // ==========================================
                 // 使用 Flex 布局，让内部元素从上到下垂直排列
                 // 并给一个最小宽度，防止面板被内容挤变形
-                // ==========================================
                 display: 'flex',
                 flexDirection: 'column',
                 minWidth: '280px'
@@ -277,7 +254,6 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
             增加了 display: flex 和 justifyContent: 'flex-end'
             作用是把 FPS 面板推到容器的右上角
             ========================================== */}
-            {/* 改为下面的样子： */}
             <div
                 ref={statsContainerRef}
                 style={{
@@ -286,7 +262,7 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
                 }}
             />
             {/* ==========================================
-                新增：面板内的搜索工具栏区域
+                面板内的搜索工具栏区域
                 ========================================== */}
             <div style={{
                 display: 'flex',
@@ -337,7 +313,7 @@ const SatellitePanel: React.FC<SatellitePanelProps> = ({ target, lastModeledRef,
             </div>
 
             {/* ==========================================
-                修改：对数据展示区域采用条件渲染
+                对数据展示区域采用条件渲染
                 只有选中了卫星且有数据时才显示下方的姿态信息
                 ========================================== */}
             {(!target || !realtimeOrientation) ? (

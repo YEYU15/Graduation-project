@@ -21,17 +21,17 @@ TIME_STEP_SECONDS = 60     # 每隔多少秒采一个点 (对于低轨卫星，6
 # ==========================================
 
 def main():
-    print(f"🚀 正在加载航天历法与 TLE 数据...")
+    print(f"正在加载航天历法与 TLE 数据...")
     # 加载时间系统（初次运行会自动下载一小段星历文件到本地）
     ts = load.timescale()
     
     if not os.path.exists(TLE_FILE):
-        print(f"❌ 找不到文件 {TLE_FILE}，请确保路径正确！")
+        print(f"找不到文件 {TLE_FILE}，请确保路径正确！")
         return
 
     # 解析 TLE 文件
     satellites = load.tle_file(TLE_FILE)
-    print(f"✅ 成功读取 {len(satellites)} 颗卫星数据！")
+    print(f"成功读取 {len(satellites)} 颗卫星数据！")
 
     # ================= 关键修改：时间与时区 =================
     # 生成时间序列 (必须明确指定 timezone.utc，否则 Skyfield 会报错)
@@ -63,7 +63,7 @@ def main():
         }
     ]
 
-    print(f"⏳ 正在进行 SGP4 轨道推演并生成 CZML (此过程可能需要几十秒)...")
+    print(f"正在进行 SGP4 轨道推演并生成 CZML...")
 
     # 遍历每颗卫星，计算坐标 (为了演示，限制前 500 颗，你可以去掉切片跑全部)
     for i, sat in enumerate(satellites):
@@ -78,7 +78,6 @@ def main():
             sim_time_s = j * TIME_STEP_SECONDS
             positions.extend([sim_time_s, x[j], y[j], z[j]])
 
-        # 定义颜色 (使用我们之前讨论的高级感莫兰迪色)
         colors = [
             [64, 158, 255, 255],   # 商务蓝
             [103, 194, 58, 255],   # 森林绿
@@ -122,7 +121,7 @@ def main():
     with open(OUT_FILE, "w", encoding='utf-8') as outf:
         json.dump(czml_document, outf, separators=(',', ':'), ensure_ascii=False)
 
-    print(f"🎉 大功告成！全量 GLTF 模型测试数据已保存为 {OUT_FILE}。")
+    print(f"全量 GLTF 模型测试数据已保存为 {OUT_FILE}。")
 
 if __name__ == "__main__":
     main()

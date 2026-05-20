@@ -1,8 +1,11 @@
 import os
 import json
+import urllib.request
+import urllib.error
 from datetime import datetime, timedelta, timezone
 from skyfield.api import load
 from skyfield.framelib import itrs
+from curl_cffi import requests
 
 # ================= 配置区 =================
 # 获取当前脚本所在文件夹的绝对路径，确保路径寻找不受终端执行位置影响
@@ -15,23 +18,50 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 # 向上跳两级回到 code 根目录，再进入 public
 OUT_FILE = os.path.abspath(os.path.join(current_dir, "..", "..", "public", "real_starlink_orbit.czml"))
 
+# 新增：CelesTrak 活跃卫星 TLE 数据源 URL
+TLE_URL = "https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle"
+
 # 轨道推演设置
 SIMULATION_HOURS = 2       # 推演未来几小时的轨道
 TIME_STEP_SECONDS = 60     # 每隔多少秒采一个点 (对于低轨卫星，60秒足够平滑)
 # ==========================================
 
+def update_tle_data(url, file_path):
+    print(f"正在从 CelesTrak 获取最新 TLE 数据...")
+    try:
+        response = requests.get(url, impersonate="chrome110", timeout=30)
+        
+        # 检查是否成功获取 (200 OK)
+        if response.status_code == 200:
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            with open(file_path, "w", encoding='utf-8') as f:
+                f.write(response.text)
+            print("TLE 数据下载并更新成功！\n")
+        else:
+            print(f"服务器返回状态码: {response.status_code}")
+            print("将尝试使用本地已有的旧 TLE 数据继续执行...\n")
+            
+    except Exception as e:
+        print(f"网络请求失败: {e}")
+        print("将尝试使用本地已有的旧 TLE 数据继续执行...\n")
+
+
 def main():
-    print(f"🚀 正在加载航天历法与 TLE 数据...")
+    # ================= 新增：执行数据更新 =================
+    update_tle_data(TLE_URL, TLE_FILE)
+    # ======================================================
+
+    print(f"正在加载航天历法与 TLE 数据...")
     # 加载时间系统（初次运行会自动下载一小段星历文件到本地）
     ts = load.timescale()
     
     if not os.path.exists(TLE_FILE):
-        print(f"❌ 找不到文件 {TLE_FILE}，请确保路径正确！")
+        print(f"找不到文件 {TLE_FILE}，并且网络下载失败，程序终止！")
         return
 
     # 解析 TLE 文件
     satellites = load.tle_file(TLE_FILE)
-    print(f"✅ 成功读取 {len(satellites)} 颗卫星数据！")
+    print(f"成功读取 {len(satellites)} 颗卫星数据！")
 
     # ================= 关键修改：时间与时区 =================
     # 生成时间序列 (必须明确指定 timezone.utc，否则 Skyfield 会报错)
@@ -63,7 +93,7 @@ def main():
         }
     ]
 
-    print(f"⏳ 正在进行 SGP4 轨道推演并生成 CZML (此过程可能需要几十秒)...")
+    print(f"正在进行 SGP4 轨道推演并生成 CZML...")
 
     # 遍历每颗卫星，计算坐标 (为了演示，限制前 500 颗，你可以去掉切片跑全部)
     for i, sat in enumerate(satellites):
@@ -78,7 +108,6 @@ def main():
             sim_time_s = j * TIME_STEP_SECONDS
             positions.extend([sim_time_s, x[j], y[j], z[j]])
 
-        # 定义颜色 (使用我们之前讨论的高级感莫兰迪色)
         colors = [
             [64, 158, 255, 255],   # 商务蓝
             [103, 194, 58, 255],   # 森林绿
@@ -91,7 +120,7 @@ def main():
             "name": sat.name,
             "availability": availability_str,
             "path": {
-                "show": False, # 这里开启轨迹看看效果
+                "show": False, 
                 "width": 1.5,
                 "material": { "solidColor": { "color": { "rgba": [c * 0.8 for c in color_rgba][:3] + [150] } } },
                 "resolution": 120
@@ -115,7 +144,7 @@ def main():
     with open(OUT_FILE, "w", encoding='utf-8') as outf:
         json.dump(czml_document, outf, separators=(',', ':'), ensure_ascii=False)
 
-    print(f"🎉 大功告成！真实数据已保存为 {OUT_FILE}。")
+    print(f"真实数据已保存为 {OUT_FILE}。")
 
 if __name__ == "__main__":
     main()

@@ -30,7 +30,7 @@ function App() {
     // 3. 初始相机视角
     cesiumViewer.camera.flyHome(0);
 
-    // 新增：地球初始化彻底完成后，通知 React 可以加载子组件了
+    // 地球初始化彻底完成后，通知 React 加载子组件
     setIsViewerReady(true);
 
     // 4. 组件卸载时销毁实例
@@ -48,8 +48,7 @@ function App() {
       // 强制容器占满全屏
       style={{ width: '100vw', height: '100vh', margin: 0, padding: 0, overflow: 'hidden' }}
     >
-      {/* 【改动 2】：当地球准备就绪后，同时渲染“数据加载组件”和“模型点击组件” */}
-      {/* 注意：因为有两个同级组件，需要用 <> ... </> (React Fragment) 包裹起来 */}
+      {/* 当地球准备就绪后，同时渲染“数据加载组件”和“模型点击组件” */}
       {isViewerReady && (
         <>
           <ConstellationSelector />

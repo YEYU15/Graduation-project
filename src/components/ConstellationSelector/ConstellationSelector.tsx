@@ -17,7 +17,7 @@ const ConstellationSelector: React.FC = () => {
                 // 清理旧数据
                 viewer.dataSources.removeAll();
 
-                // 3. 创建数据源并加载 (对应文档 2.2 节)
+                // 创建数据源并加载
                 const mainDataSource = new Cesium.CzmlDataSource();
                 await viewer.dataSources.add(mainDataSource);
 

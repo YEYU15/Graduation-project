@@ -30,7 +30,6 @@ function restoreEntityVisuals(entity: any, snapshot: any) {
     if (typeof snapshot.show !== 'undefined') entity.show = snapshot.show;
 }
 
-// === 补充：根据报告推断的辅助函数 ===
 // 识别拾取到的目标到底是不是卫星
 function detectTarget(rawId: string, rawName: string) {
     if (!rawId) return null;
@@ -60,12 +59,10 @@ const SatelliteInfo: React.FC = () => {
     // setTarget(entity)时：React 接收到通知，重新渲染组件
     const [target, setTarget] = useState<any>(null);
 
-    // ==========================================
-    // 新增：为搜索功能添加状态和 Ref
-    // ==========================================
+    // 为搜索功能添加状态和 Ref
     // 存储用户在搜索框中输入的文字
     const [searchInput, setSearchInput] = useState('');
-    // 这是一个巧妙的桥梁，用来将 useEffect 内部的作用域函数暴露给外面的按钮使用
+    // 将 useEffect 内部的作用域函数暴露给外面的按钮使用
     const selectSatelliteRef = useRef<((searchStr: string) => void) | null>(null);
 
     useEffect(() => {
@@ -83,9 +80,7 @@ const SatelliteInfo: React.FC = () => {
                 : '/assets/Satellite.gltf';
         }
 
-        // ==========================================
-        // 报告中引用的核心方法：应用模型到实体
-        // ==========================================
+        // 应用模型到实体
         const applySatelliteModelToEntity = (entity: any, originalId: string) => {
             // 1. 拍快照保存现场
             const snapshot = snapshotEntityVisuals(entity);
@@ -96,9 +91,7 @@ const SatelliteInfo: React.FC = () => {
             // 获取位置属性
             const positionProp = entity.position;
 
-            // ==========================================
-            // 新增：第7节 动态姿态计算
-            // ==========================================
+            // 动态姿态计算
             let dynamicOrientationProp = entity.orientation; // 默认拿原始姿态兜底
 
             try {
@@ -129,9 +122,7 @@ const SatelliteInfo: React.FC = () => {
                             // 获取一个表示卫星运动方向的单位向量
                             Cesium.Cartesian3.normalize(velocity, velocity);
 
-                            // ==========================================
                             // 3. 右向量计算与奇异点容错处理
-                            // ==========================================
                             // 初算：星下线方向 × 速度方向
                             let right = Cesium.Cartesian3.cross(nadirAxis, velocity, new Cesium.Cartesian3());
 
@@ -195,11 +186,11 @@ const SatelliteInfo: React.FC = () => {
             }
             // ==========================================
 
-            // 3. 创建 Overlay Entity (报告第 6 节)
+            // 3. 创建 Overlay Entity 
             const overlayEntity = viewer.entities.add({
                 id: `sat-model-overlay-${String(entity.id)}-${Date.now()}`,
                 position: positionProp ?? entity.position,
-                // 👇 这里使用我们刚刚计算出来的 dynamicOrientationProp
+                // 使用刚刚计算出来的 dynamicOrientationProp
                 orientation: dynamicOrientationProp,
                 model: {
                     uri: satelliteModelUri,
@@ -211,10 +202,8 @@ const SatelliteInfo: React.FC = () => {
                 }
             });
 
-            // ==========================================
-            // 报告第 9 节：额外的姿态可视化
-            // ==========================================
-            // 9.1 星下线（青色）
+            // 额外的姿态可视化
+            // 星下线（青色）
             const nadirLineEntity = viewer.entities.add({
                 // 为实体生成一个唯一的 ID：前缀 + 卫星实体ID + 当前时间戳
                 id: `sat-nadir-line-${String(entity.id)}-${Date.now()}`,
@@ -226,7 +215,7 @@ const SatelliteInfo: React.FC = () => {
                         if (!pos) return [];
                         // 2. 先将笛卡尔空间直角坐标 (X, Y, Z) 转换为地理弧度坐标 (Long, Lat, Height)
                         const carto = Cesium.Cartographic.fromCartesian(pos);
-                        // 3. 【构造线段端点】
+                        // 3. 构造线段端点
                         // 端点 1: 卫星在太空中的实际位置 (pos)
                         // 端点 2: 保持相同的经纬度，但将高度设为 0（即地表垂直投影点）
                         const groundPoint = Cesium.Cartesian3.fromRadians(
@@ -245,7 +234,7 @@ const SatelliteInfo: React.FC = () => {
                 }
             });
 
-            // 9.2 & 9.3 模型头部朝向线（红色） + 夹角标签
+            // 模型头部朝向线（红色） + 夹角标签
             const forwardLineEntity = viewer.entities.add({
                 id: `sat-forward-line-${String(entity.id)}-${Date.now()}`,
                 position: positionProp,
@@ -280,7 +269,6 @@ const SatelliteInfo: React.FC = () => {
                             endPoint = Cesium.Cartesian3.add(pos, scaledForward, new Cesium.Cartesian3());
                         }
 
-                        // 现在的数组是严格的 [Cartesian3, Cartesian3]，Cesium 可以安全渲染
                         return [pos, endPoint];
                     }, false),
                     width: 3,
@@ -307,13 +295,11 @@ const SatelliteInfo: React.FC = () => {
                 }
             });
 
-            // 👇 最后，更新这行记录 Ref 的代码，把两条线存进去
+            // 更新记录 Ref 的代码，把两条线存进去
             lastModeledRef.current = { entity, snapshot, overlayEntity, extraEntities: [nadirLineEntity, forwardLineEntity] };
         };
 
-        // ==========================================
-        // 报告第 5 节：点击事件与模型加载入口
-        // ==========================================
+        // 点击事件与模型加载入口
         const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
 
         // 专门监听场景中的鼠标 左键点击 操作
@@ -383,9 +369,7 @@ const SatelliteInfo: React.FC = () => {
 
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
-        // ==========================================
-        // 新增：搜索特定卫星并自动应用模型
-        // ==========================================
+        // 搜索特定卫星并自动应用模型
         selectSatelliteRef.current = (searchStr: string) => {
             let foundEntity: any = null;
 
@@ -431,7 +415,7 @@ const SatelliteInfo: React.FC = () => {
 
                 // 更新 React 面板状态
                 setTarget(t);
-                // 直接复用你写好的核心覆盖方法！
+                // 直接复用核心覆盖方法
                 applySatelliteModelToEntity(foundEntity, t.id);
 
                 // 视角平滑飞向搜索到的卫星
@@ -460,9 +444,7 @@ const SatelliteInfo: React.FC = () => {
         <SatellitePanel
             target={target}
             lastModeledRef={lastModeledRef} // 把 ref 传给儿子，让它自己去拿数据
-            // ==========================================
-            // 新增：把刚才绑定的搜索方法传给面板组件
-            // ==========================================
+            // 把刚才绑定的搜索方法传给面板组件
             onSearchRequest={(searchStr: string) => {
                 if (selectSatelliteRef.current) {
                     selectSatelliteRef.current(searchStr);
